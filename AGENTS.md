@@ -13,4 +13,5 @@
 - **Anim**: làm animation Phaser (`this.anims.create` từ spritesheet / atlas) và tween. Handoff ghi số frame, fps, key animation.
 - **Sound**: dùng mp3 mono ngắn đặt trong `src/assets/`, nhạc loop không có khoảng hở. Handoff ghi độ dài, dung lượng, sự kiện phát.
 - **Dev**: chỉ sửa trong repo này. Mọi lời gọi SDK mạng đi qua `src/ad/ad.ts`.
+- **Release** (sau khi Lead review đạt): Dev chạy `npm run release -- PLA-xx` trên commit sạch (tên bản không có `-dirty`), mọi mạng OK. Handoff ghi thư mục `release/PLA-xx/<bản>/` và nội dung `manifest.md`. Không tự nộp lên mạng quảng cáo; người dùng / UA gửi.
 - **QA**: kiểm bằng `npm run dev` + trình duyệt (khung dọc 720×1280 và một màn ngang). Bản build `dist/<mạng>/index.html` phải mở được không cần server. Kiểm CTA và dung lượng theo bảng của `npm run build`.

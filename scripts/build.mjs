@@ -1,6 +1,7 @@
 // Build PLA: mỗi mạng 1 file dist/<mạng>/index.html, rồi kiểm dung lượng theo networks.json.
-// Dùng:  npm run build                 → mọi mạng
-//        npm run build:one -- applovin → 1 mạng
+// Dùng:  npm run build                       → mọi mạng
+//        npm run build:one -- applovin       → 1 mạng
+//        npm run build:one -- applovin,meta  → vài mạng
 import { execSync } from 'node:child_process';
 import { readFileSync, statSync } from 'node:fs';
 
@@ -9,7 +10,7 @@ delete networks._note;
 
 const i = process.argv.indexOf('--network');
 const only = i >= 0 ? process.argv[i + 1] : null;
-const targets = only ? [only] : Object.keys(networks).filter((n) => n !== 'preview');
+const targets = only ? only.split(',') : Object.keys(networks).filter((n) => n !== 'preview');
 for (const n of targets) if (!networks[n]) { console.error(`Không có mạng "${n}" trong networks.json`); process.exit(2); }
 
 let failed = 0;

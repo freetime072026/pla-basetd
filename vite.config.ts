@@ -14,7 +14,7 @@ const api = (networks[network] as { api: string }).api;
 // Thẻ script SDK mà mạng tự cấp lúc chạy — không nhúng, chỉ khai báo trong <head>.
 const HEAD_SCRIPTS: Record<string, string> = {
   mraid: '<script src="mraid.js"></script>',
-  google: '<script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>',
+  google: '<meta name="ad.orientation" content="portrait">\n    <script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>',
 };
 
 function adHead(): Plugin {
