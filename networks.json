@@ -1,0 +1,10 @@
+{
+  "_note": "Mạng quảng cáo đích. api = cách gọi CTA (src/ad/ad.ts). maxBytes = giới hạn dung lượng file HTML — số tham khảo, xác minh lại theo spec mới nhất của mạng trước khi nộp.",
+  "preview":   { "api": "preview",   "maxBytes": 5242880 },
+  "applovin":  { "api": "mraid",     "maxBytes": 5242880 },
+  "unity":     { "api": "mraid",     "maxBytes": 5242880 },
+  "ironsource":{ "api": "mraid",     "maxBytes": 5242880 },
+  "mintegral": { "api": "mintegral", "maxBytes": 5242880 },
+  "meta":      { "api": "meta",      "maxBytes": 2097152 },
+  "google":    { "api": "google",    "maxBytes": 5242880 }
+}

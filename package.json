@@ -1,0 +1,22 @@
+{
+  "name": "pla-basetd",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Playable Ads (PLA) cho BaseTD / Purrge! — Phaser, xuất 1 file HTML cho từng mạng quảng cáo",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build.mjs",
+    "build:one": "node scripts/build.mjs --network",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}
