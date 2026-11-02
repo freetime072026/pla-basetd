@@ -26,6 +26,7 @@ npm run typecheck
 | `src/scenes/` | `BootScene` (nạp asset) → `GameScene` (chơi) → `EndScene` (end card + CTA) |
 | `src/ui/cta.ts` | Nút CTA dùng chung |
 | `src/assets/` | Ảnh/âm thanh đã tối ưu cho web (chưa có; xem § Asset) |
+| `docs/scenarios/` | Kịch bản từng playable (`PLA-xx.md`): nguyên tắc, mẫu, storyboard, AC — [docs/scenarios/README.md](docs/scenarios/README.md) |
 
 ## Mạng quảng cáo
 
